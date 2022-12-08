@@ -1,0 +1,118 @@
+h1 {
+	color: #3DDC84;
+	font-size: underline; 
+	text-align: center;
+	font-family: fantasy;
+	margin-bottom: 30px;
+}
+
+.robots {
+	flex-wrap: wrap; /* flex items will wrap on to multile lines top to bottom */
+	display: flex; /*this defines a flex container*/
+	justify-content: center; /* alignment along the main axis to the center */
+}
+
+.head,
+.left_arm,
+.right_arm,
+.torso,
+.right_leg,
+.left_leg {
+	background-color: #3DDC84; /* background color of 6 items set to color */
+}
+
+.head {
+	width: 200px; /* sets width to 200px */
+	margin: 0 auto; /* horizontally center within its container*/
+	height: 150px; /*sets height to 150px */
+	border-radius: 200px 200px 0 0; /* top left, top right, bottom right, bottom left */
+	margin-bottom: 10px; /* adds a 10px margin to the bottom*/
+}
+
+.eyes {
+	display: flex; /* defines a flexbox container */
+}
+
+.head:hover {
+	width: 300px; /* sets width of element? to 300px */
+	transition: 2s ease-in-out; /* sets transition to ease in out over 1 second */
+}
+
+.upper_body {
+	width: 300px;
+	height: 150px;
+	display: flex; /* defines a flexbox container */
+}
+
+.left_arm, .right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px; /* value applies to all four corners */
+}
+
+.left_arm {
+	margin-right: 10px;
+}
+
+.left_arm:hover {
+	transform: rotate(50deg);
+}
+
+.right_arm {
+	margin-left: 10px;
+	
+	}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px; /* bottom right and bottom left radius */
+}
+
+.lower_body {
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.left_leg, .right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;	
+}
+
+.right_leg {
+	margin-left: 30px;
+}
+
+.left_leg {
+	margin-left: 45px;
+}
+
+.left_leg:hover {
+	transform: rotate(20deg);
+}
+
+.right_leg:hover {
+	transform: rotate(-20deg); /* on mouse over rotate right_leg -20 degrees*/
+}
+
+.left_eye, .right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.left_eye {
+	position: relative;
+	top: 100px; /*100 pxs down from the top */
+	left: 40px; /* 40 pxs in from the left */
+}
+
+.right_eye {
+	position: relative;
+	top: 100px; /*100 pxs down from the top */
+	left: 120px; /* 120 pxs in from the left */
+}
